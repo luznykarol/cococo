@@ -2,3 +2,33 @@
   height: 15px;
   width: auto;
 }
+
+
+.logo-wrap {
+  @apply relative;
+  .left {
+    padding-left: 100px;
+  }
+
+  .logo__helper {
+    @apply font-bold uppercase text-center absolute text-sm text-black;
+    line-height: 1.1;
+
+    &--1 {
+      top: 10px;
+      left: 0;
+    }
+
+    &--2 {
+      bottom: 10px;
+      left: 0;
+    }
+  }
+}
+
+.nav__link {
+  @apply uppercase;
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
