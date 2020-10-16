@@ -13,3 +13,44 @@
     @apply text-sm;
   }
 }
+
+.hero__main--bg {
+  height: 775px;
+}
+
+.line {
+  height: 2px;
+  max-width: 150px;
+  @apply bg-grey-dark;
+}
+
+.line-full {
+  height: 2px;
+  max-width: 100%;
+  @apply bg-red;
+  margin: 40px auto;
+}
+
+.collage-item {
+  width: 100%;
+}
+
+.collage-1 {
+  height: 500px;
+  max-width: 500px;
+}
+.collage-2 {
+  height: 350px;
+  max-width: 800px;
+}
+.collage-3 {
+  height: 400px;
+  max-width: 400px;
+}
+.collage-4 {
+  height: 600px;
+  max-width: 600px;
+}
+
+.collage-top {
+}

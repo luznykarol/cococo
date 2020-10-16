@@ -1,23 +1,23 @@
-import React from "react";
-import PropTypes from "prop-types";
-import ReactSVG from "react-svg";
-import Layout from "@/components/Layout";
+import React from 'react'
+import PropTypes from 'prop-types'
+import ReactSVG from 'react-svg'
+import Layout from '@/components/Layout'
 
 export const ProjectsPageTemplate = ({ data }) => {
   return (
     <>
-      <div className="flex items-center justify-center">
-        <div className="container px-5 sm:px-10">
-          <section className="w-full bg-teal-100 py-20 px-5 rounded-lg shadow border-grey-lighter border">
-            <div className="text-center mx-auto">
+      <div className='flex items-center justify-center'>
+        <div className='container-lg px-5 sm:px-10'>
+          <section className='w-full bg-teal-100 py-20 px-5 rounded-lg shadow border-grey-lighter border'>
+            <div className='text-center mx-auto'>
               <h1>Realizacje</h1>
             </div>
           </section>
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
 const ProjectsPage = () => {
   //   const { frontmatter } = data.markdownRemark;
@@ -27,8 +27,8 @@ const ProjectsPage = () => {
       {/* <WwdPageTemplate data={frontmatter} /> */}
       <ProjectsPageTemplate />
     </Layout>
-  );
-};
+  )
+}
 
 // WwdPage.propTypes = {
 //   data: PropTypes.shape({
@@ -54,4 +54,4 @@ const ProjectsPage = () => {
 //   }
 // `;
 
-export default ProjectsPage;
+export default ProjectsPage

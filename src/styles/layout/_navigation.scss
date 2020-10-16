@@ -2,10 +2,18 @@
   height: 15px;
   width: auto;
 }
-
+.navigation {
+  // @apply absolute;
+  // top: 20px;
+  // right: 30px;
+}
+.header {
+  // transform: translate(-50%, 0);
+}
 
 .logo-wrap {
   @apply relative;
+  padding-top: 20px;
   .left {
     padding-left: 100px;
   }
