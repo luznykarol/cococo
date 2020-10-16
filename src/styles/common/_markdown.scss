@@ -1,9 +1,19 @@
 .aboutleft {
   max-width: 310px;
-  font-size: 14px;
   @apply text-red;
 }
 
 .herobackgroundsignature {
   @apply text-red;
+}
+
+.markdown-wrap {
+  p {
+    &:not(:last-of-type) {
+      margin: 0 0 20px 0;
+    }
+  }
+}
+
+.aboutright {
 }

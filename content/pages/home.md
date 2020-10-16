@@ -28,22 +28,22 @@ aboutright: >-
   - Cozy Cocktail Collective
 abouthelper: Co Robimy
 aboutbar: >-
-  ### Wesela / Eventy
+  ## Wesela / Eventy
 
-  ### Doradztwo Barowe
+  ## Doradztwo Barowe
 
-  ### Warsztaty i szkolenia
+  ## Warsztaty i szkolenia
 projectshelper: Nasze przykładowe realizacje
 collage1: /img/ccc-placeholder-2.png
 collage2: /img/ccc-placeholder-3.png
 collage3: /img/ccc-placeholder-4.png
 collage4: /img/ccc-placeholder-5.png
 projectsbar: >-
-  ### fotograf / filmowiec / weddingplanner
+  ## fotograf / filmowiec / weddingplanner
 
-  ### / make up / grafik / pokaz flair
+  ## / make up / grafik / pokaz flair
 
-  ### / chef kuchni / kelnerzy
+  ## / chef kuchni / kelnerzy
 projectstext: >-
   Częścią cozy są też nasi przyjaciele zajmujący się usługami, które mogą wzbogacić Twoją imprezę, akcję promocyjną, czy tworzenie konceptu. Działając razem nasz potencjał się mnoży a wrażenia z całości będą bardziej spójne i proporcjonalnie większe.
 ---

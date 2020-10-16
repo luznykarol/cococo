@@ -22,62 +22,72 @@ export const HomePageTemplate = ({ data }) => {
               className='hero__main--bg'
             />
             <ReactMarkdown
-              className='herobackgroundsignature'
+              className='herobackgroundsignature mt-5 font-bold'
               source={pageData.herobackgroundsignature}></ReactMarkdown>
             <ReactMarkdown
-              className='aboutleft'
+              className='aboutleft markdown-wrap std-para mt-12'
               source={pageData.aboutleft}></ReactMarkdown>
             <ReactMarkdown
-              className='aboutright'
+              className='aboutright markdown-wrap font-cozy text-h4 leading-8'
               source={pageData.aboutright}></ReactMarkdown>
           </div>
         </section>
         <section className='about-bar bg-white py-20'>
           <div className='container-lg'>
-            <div className='flex'>
-              <p>{pageData.abouthelper}</p>
-              <ReactMarkdown className='aboutbar' source={pageData.aboutbar} />
+            <div className='flex justify-between items-center'>
+              <div className='flex items-center'>
+                <p className='font-bold mr-16'>{pageData.abouthelper}</p>
+                <ReactMarkdown
+                  className='aboutbar font-cozy leading-64 font-bold '
+                  source={pageData.aboutbar}
+                />
+              </div>
               <ReactSVG src='../../img/svg/arrowRight.svg' />
             </div>
           </div>
         </section>
-        <section className='projects bg-grey py-20'>
+        <section className='projects bg-cream py-20'>
           <div className='container-lg'>
             <div className='flex items-center'>
               <ReactSVG src='../../img/svg/CCC-sygnet.svg' />
               <figure className='line'></figure>
               <p>{pageData.projectshelper}</p>
             </div>
-            <div className='collage-wrap'>
-              <div className='collage-top  relative flex items-start'>
-                <Img
-                  className='collage-item collage-1'
-                  fluid={pageData.collage1.childImageSharp.fluid}
-                />
-                <Img
-                  className='collage-item collage-2'
-                  fluid={pageData.collage2.childImageSharp.fluid}
-                />
-              </div>
-              <div className='collage-bottom relative flex items-end'>
-                <Img
-                  className='collage-item collage-3'
-                  fluid={pageData.collage3.childImageSharp.fluid}
-                />
-                <Img
-                  className='collage-item collage-4'
-                  fluid={pageData.collage4.childImageSharp.fluid}
-                />
+            <div className='collage-wrap pt-8'>
+              <div className='flex'>
+                <div className='collage-col w-2/5 flex flex-col items-end'>
+                  <Img
+                    className='collage-item collage-1'
+                    fluid={pageData.collage1.childImageSharp.fluid}
+                  />
+                  <Img
+                    className='collage-item collage-3'
+                    fluid={pageData.collage3.childImageSharp.fluid}
+                  />
+                </div>
+                <div className='collage-col w-3/5'>
+                  <Img
+                    className='collage-item collage-2'
+                    fluid={pageData.collage2.childImageSharp.fluid}
+                  />
+                  <Img
+                    className='collage-item collage-4'
+                    fluid={pageData.collage4.childImageSharp.fluid}
+                  />
+                </div>
               </div>
             </div>
 
             <ReactMarkdown
-              className='projectsbar text-center'
+              className='projectsbar text-center text-yellow font-cozy leading-64 font-bold pt-34'
               source={pageData.projectsbar}
             />
-            <ReactSVG src='../../img/svg/spinner.svg' />
+            <ReactSVG
+              className='mx-auto pt-10'
+              src='../../img/svg/spinner.svg'
+            />
             <ReactMarkdown
-              className='projectstext'
+              className='projectstext pt-10'
               source={pageData.projectstext}
             />
           </div>

@@ -3,9 +3,7 @@
   width: auto;
 }
 .navigation {
-  // @apply absolute;
-  // top: 20px;
-  // right: 30px;
+  padding: 25px 0 0 0;
 }
 .header {
   // transform: translate(-50%, 0);
@@ -39,4 +37,8 @@
   &:not(:last-of-type) {
     margin-right: 30px;
   }
+}
+
+.std-para {
+  @apply text-base leading-tight font-para;
 }
