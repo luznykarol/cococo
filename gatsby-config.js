@@ -15,7 +15,6 @@ module.exports = {
   plugins: [
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
-    'gatsby-plugin-preact',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -65,14 +64,6 @@ module.exports = {
           tailwind,
           require('./tailwind.config.js'), // Optional: Load custom Tailwind CSS configuration
         ],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-mailchimp',
-      options: {
-        endpoint:
-          'https://semplicityinc.us11.list-manage.com/subscribe/post?u=4b615028e455dada63fba0204&amp;id=b54c018684', // string; add your MC list endpoint here; see instructions below
-        timeout: 3500, // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
       },
     },
     {
