@@ -43,5 +43,5 @@ consultancy: >-
 
   Wybierz jeden z oferowanych przez nas autorskich scenariuszy lub napisz do nas, i pozwól nam zaprojektować bar na Twoje wydarzenie.
 consultancybar: >-
-  Skontaktuj się z nami i opowiedz o swoich potrzebach - my zajmiemy się resztą.
+  ## Skontaktuj się z nami i opowiedz o swoich potrzebach - my zajmiemy się resztą.
 ---

@@ -38,9 +38,9 @@ const Footer = () => {
   console.log(data)
   return (
     <footer className='footer py-20 w-full bg-red' id='contact'>
-      <div className='container-lg '>
+      <div className='container '>
         <div className='flex justify-between'>
-          <div className='w-1/3'>
+          <div className='footer__info'>
             <ReactSVG className='mb-5' src={footerData.image.publicURL} />
 
             <h2 className='text-yellow text-left text-h5 font-cozy'>
@@ -70,7 +70,7 @@ const Footer = () => {
               }}
             />
           </div>
-          <div className='w-1/3'>
+          <div className='footer__form'>
             <Form />
           </div>
         </div>

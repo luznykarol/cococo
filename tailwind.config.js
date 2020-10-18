@@ -16,7 +16,6 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-
       black: '#2E2014',
       white: '#fff',
       'grey-darker': '#434343',
@@ -42,6 +41,7 @@ module.exports = {
       '8': '2rem',
       '10': '2.5rem',
       '12': '3rem',
+      '13': '3.75rem',
       '16': '4rem',
       '20': '5rem',
       '24': '6rem',
@@ -165,6 +165,7 @@ module.exports = {
       ],
     },
     fontSize: {
+      xxs: '0.625rem',
       xs: '0.75rem',
       sm: '0.875rem',
       base: '1rem',
@@ -222,6 +223,7 @@ module.exports = {
       '10': '2.5rem',
       '64': '4rem',
       '100': '100%',
+      cozy: '2.125',
     },
     listStyleType: {
       none: 'none',

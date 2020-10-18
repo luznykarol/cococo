@@ -21,19 +21,32 @@ export const HomePageTemplate = ({ data }) => {
               fluid={pageData.herobackground.childImageSharp.fluid}
               className='hero__main--bg'
             />
-            <ReactMarkdown
-              className='herobackgroundsignature mt-5 font-bold'
-              source={pageData.herobackgroundsignature}></ReactMarkdown>
-            <ReactMarkdown
-              className='aboutleft markdown-wrap std-para mt-12'
-              source={pageData.aboutleft}></ReactMarkdown>
-            <ReactMarkdown
-              className='aboutright markdown-wrap font-cozy text-h4 leading-8'
-              source={pageData.aboutright}></ReactMarkdown>
+            <div className='hero-info-wrap'>
+              {' '}
+              <div className='flex justify-between'>
+                <div>
+                  <ReactMarkdown
+                    className='herobackgroundsignature mt-5 font-bold'
+                    source={pageData.herobackgroundsignature}
+                  />
+                  <ReactMarkdown
+                    className='aboutleft markdown-wrap std-para mt-12'
+                    source={pageData.aboutleft}
+                  />
+                </div>
+                <div className='col pt-13'>
+                  <ReactSVG className='' src='../../img/svg/spinner.svg' />
+                  <ReactMarkdown
+                    className='pt-20 aboutright markdown-cozy'
+                    source={pageData.aboutright}
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section className='about-bar bg-white py-20'>
-          <div className='container-lg'>
+          <div className='container'>
             <div className='flex justify-between items-center'>
               <div className='flex items-center'>
                 <p className='font-bold mr-16'>{pageData.abouthelper}</p>
@@ -47,7 +60,7 @@ export const HomePageTemplate = ({ data }) => {
           </div>
         </section>
         <section className='projects bg-cream py-20'>
-          <div className='container-lg'>
+          <div className='container'>
             <div className='flex items-center'>
               <ReactSVG src='../../img/svg/CCC-sygnet.svg' />
               <figure className='line'></figure>

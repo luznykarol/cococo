@@ -15,5 +15,33 @@
   }
 }
 
-.aboutright {
+.markdown {
+  &__events {
+    max-width: 605px;
+  }
+  &__consultancybar {
+    max-width: 340px;
+
+    h5 {
+      @apply text-h5 font-cozy;
+    }
+  }
+}
+
+.markdown-cozy {
+  @apply font-cozy;
+
+  h2 {
+    @apply font-bold mb-12;
+    line-height: 1.2;
+  }
+
+  p {
+    @apply text-h5  font-cozy-italic;
+    line-height: 1.6;
+
+    &:not(:last-of-type) {
+      @apply mb-5;
+    }
+  }
 }

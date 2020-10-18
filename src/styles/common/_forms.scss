@@ -57,8 +57,6 @@
       text-align: center;
     }
 
-
-
     &--active {
       transform: translateY(0);
       opacity: 1;
@@ -111,17 +109,16 @@
     @apply font-bold text-yellow text-left;
   }
   button {
-    margin: 200px auto 0 auto;
-    @apply border-yellow text-yellow;
+    @apply border-yellow text-yellow mt-32 mx-auto;
     border: 1px solid;
     border-radius: 40px;
     width: 100%;
     padding: 20px;
     outline: none;
-    transition: .4s all ease-in;
+    transition: 0.4s all ease-in;
 
     &:hover {
-     @apply bg-yellow text-red;
+      @apply bg-yellow text-red;
     }
   }
 }
