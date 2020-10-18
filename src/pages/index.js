@@ -21,6 +21,7 @@ export const HomePageTemplate = ({ data }) => {
               fluid={pageData.herobackground.childImageSharp.fluid}
               className='hero__main--bg'
             />
+            Img
             <div className='hero-info-wrap'>
               {' '}
               <div className='flex justify-between'>

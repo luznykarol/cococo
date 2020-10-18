@@ -22,7 +22,7 @@ export const AboutPageTemplate = ({ data }) => {
                 className='hero__sub--bg'
               />
               <div className='scroll-svg-wrap'>
-                <ScrollRotate throttle={0.1} animationDuration={3}>
+                <ScrollRotate throttle={0.1} loops={1} animationDuration={5}>
                   <ReactSVG
                     className='spinner-large'
                     src='../../img/svg/spinner-large.svg'
