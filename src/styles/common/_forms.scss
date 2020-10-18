@@ -1,6 +1,6 @@
 .input,
 .textarea {
-  border-bottom: 1px solid;
+  border-bottom: 0.5px solid;
   max-width: 100%;
   @apply border-yellow border-b-2;
   background: transparent;
@@ -105,8 +105,9 @@
   flex-direction: column;
   margin-bottom: 15px;
   &__error {
-    padding: 13px 16px;
-    @apply font-bold text-yellow text-left;
+    // padding: 13px 16px;
+    left: 15px;
+    @apply font-bold relative text-yellow text-left;
   }
   button {
     @apply border-yellow text-yellow mt-32 mx-auto;

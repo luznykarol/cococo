@@ -161,15 +161,13 @@ export default class ContactForm extends Component {
             errorMessage='Wpisz swoje imię'
           />
         </div>
-
         <div className='field-grouped'>
           <InputField
             type='text'
-            name='cityName'
+            name='asdsa'
             placeholder='Miasto'
             label='Miasto'
             onChange={this.handleChange}
-            required={false}
           />
         </div>
 
