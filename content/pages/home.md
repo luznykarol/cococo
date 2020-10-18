@@ -3,7 +3,7 @@ template: index
 type: page
 title: Henlo
 
-herobackground: /img/ccc-main.png
+herobackground: /img/hero_main.png
 herobackgroundsignature: >-
   Kasia Czalej
 
@@ -34,10 +34,10 @@ aboutbar: >-
 
   ## Warsztaty i szkolenia
 projectshelper: Nasze przykładowe realizacje
-collage1: /img/ccc-placeholder-2.png
-collage2: /img/ccc-placeholder-3.png
-collage3: /img/ccc-placeholder-4.png
-collage4: /img/ccc-placeholder-5.png
+collage1: /img/collage_1.png
+collage2: /img/collage_3.png
+collage3: /img/collage_2.png
+collage4: /img/collage_4.png
 projectsbar: >-
   ## fotograf / filmowiec / weddingplanner
 

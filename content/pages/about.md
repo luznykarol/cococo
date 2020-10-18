@@ -2,7 +2,7 @@
 template: about
 type: page
 title: Henlo
-herobackground: /img/ccc-main.png
+herobackground: /img/hero_sub.png
 weddings: >-
   ## Wesela
 
@@ -20,7 +20,7 @@ scenarios: >-
   ## Cocktail Scenarios
 
   Nasze scenariusze to skrupulatnie stworzone menu,, które w spójnym stylu łączą ze sobą koktajle wytrawne i słodkie, długie i krótkie, intensywne i orzeźwiające. Dzięki temu każdy z gości Twojego wydarzenia będzie mógł odnaleźć coś dla siebie. Każdy z koktajli bazujemy na najwyższej jakości alkoholach, a wszystkie składniki przygotowujemy sami według naszych receptur w duchu zero waste. Jeżeli nie znalazłeś scenariusza dla siebie - nie martw się - z wielką przyjemnością napiszemy spersonalizowane menu dostosowane do Twoich wizji i potrzeb.
-eventsimg: /img/ccc-placeholder-1.png
+eventsimg: /img/events.png
 events: >-
   ## Eventy 
 
