@@ -5,7 +5,6 @@ import Layout from '@/components/Layout'
 import GitHubButton from 'react-github-btn'
 import Img from 'gatsby-image'
 import ReactMarkdown from 'react-markdown'
-import BackgroundImage from 'gatsby-background-image'
 
 export const HomePageTemplate = ({ data }) => {
   const pageData = data.markdownRemark.frontmatter
@@ -17,11 +16,10 @@ export const HomePageTemplate = ({ data }) => {
       <div className='bg-yellow mt-8'>
         <section className='hero pb-20'>
           <div className='container-lg '>
-            <BackgroundImage
+            {/* <BackgroundImage /> */}
+            <Img
               fluid={pageData.herobackground.childImageSharp.fluid}
-              className='hero__main--bg'
-            />
-            Img
+              className='hero__main--bg'></Img>
             <div className='hero-info-wrap'>
               {' '}
               <div className='flex justify-between'>

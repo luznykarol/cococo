@@ -17,7 +17,7 @@ export const AboutPageTemplate = ({ data }) => {
         <section className='hero  relative'>
           <div className='container-lg '>
             <div className='spinner-wrap relative'>
-              <BackgroundImage
+              <Img
                 fluid={pageData.herobackground.childImageSharp.fluid}
                 className='hero__sub--bg'
               />

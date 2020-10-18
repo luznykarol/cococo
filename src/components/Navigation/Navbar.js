@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import ReactSVG from 'react-svg'
 import { useLocation } from '@reach/router'
-import NavList from '@/components/Navigation/NavList'
+import NavList from '@/components/Navigation/Navlist'
 import Burger from '@/components/Navigation/Burger'
 
 const Navbar = () => {
