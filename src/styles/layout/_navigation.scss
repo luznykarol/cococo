@@ -92,7 +92,7 @@ header {
   &__link {
     @apply uppercase relative font-cozy font-bold;
     padding-bottom: 5px;
-    font-weight: 2rem;
+    font-size: 2rem;
     @screen 1070 {
       @apply text-base font-para;
       &:after {
