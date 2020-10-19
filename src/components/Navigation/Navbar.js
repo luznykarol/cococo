@@ -49,53 +49,56 @@ const Navbar = () => {
                   ' ' +
                   (open ? 'navigation__list--open' : 'navigation__list--closed')
                 }>
-                <Link
-                  onClick={() => setOpen(false)}
-                  to='/'
-                  className='navigation__link'>
-                  O nas
-                </Link>
-                <Link
-                  onClick={() => setOpen(false)}
-                  to='/about'
-                  className='navigation__link'>
-                  Co robimy
-                </Link>
-                {pathname == '/' ? (
+                <div className='flex flex-col 1070:flex-row '>
+                  {' '}
+                  <Link
+                    onClick={() => setOpen(false)}
+                    to='/'
+                    className='navigation__link'>
+                    O nas
+                  </Link>
+                  <Link
+                    onClick={() => setOpen(false)}
+                    to='/about'
+                    className='navigation__link'>
+                    Co robimy
+                  </Link>
+                  {pathname == '/' ? (
+                    <a
+                      className='navigation__link'
+                      onClick={() => {
+                        setOpen(false)
+                        scrollTo('#projects')
+                      }}>
+                      Realizacje
+                    </a>
+                  ) : (
+                    <Link
+                      to='/#projects'
+                      onClick={() => {
+                        setOpen(false)
+                      }}
+                      // onClick={() => scrollTo('/#services')}
+                      className='navigation__link'>
+                      Realizacje
+                    </Link>
+                  )}
+                  <Link
+                    onClick={() => setOpen(false)}
+                    to='/'
+                    className='navigation__link'>
+                    Usługi
+                  </Link>
                   <a
                     className='navigation__link'
                     onClick={() => {
                       setOpen(false)
-                      scrollTo('#projects')
+                      scrollTo('#contact')
                     }}>
-                    Realizacje
+                    Kontakt
                   </a>
-                ) : (
-                  <Link
-                    to='/#projects'
-                    onClick={() => {
-                      setOpen(false)
-                    }}
-                    // onClick={() => scrollTo('/#services')}
-                    className='navigation__link'>
-                    Realizacje
-                  </Link>
-                )}
+                </div>
 
-                <Link
-                  onClick={() => setOpen(false)}
-                  to='/'
-                  className='navigation__link'>
-                  Usługi
-                </Link>
-                <a
-                  className='navigation__link'
-                  onClick={() => {
-                    setOpen(false)
-                    scrollTo('#contact')
-                  }}>
-                  Kontakt
-                </a>
                 <div className='navigation__list--social'>
                   <a
                     href='https://www.Instagram.com'

@@ -74,7 +74,7 @@ header {
 
     &--social {
       margin-top: 20px;
-      @apply flex flex-col absolute;
+      @apply flex flex-col;
       bottom: 30px;
 
       a {
@@ -90,11 +90,11 @@ header {
   }
 
   &__link {
-    @apply uppercase relative font-cozy font-bold;
+    @apply capitalize relative font-cozy font-bold;
     padding-bottom: 5px;
     font-size: 2rem;
     @screen 1070 {
-      @apply text-base font-para;
+      @apply text-base font-para uppercase;
       &:after {
         transform: scaleX(0);
         bottom: 3px;
