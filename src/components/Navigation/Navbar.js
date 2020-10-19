@@ -36,21 +36,21 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='relative container-lg' id='header'>
+      <header className=' container-lg' id='header'>
         <nav className='navigation'>
-          <div className=''>
-            <div className='navigation__inner flex justify-between items-start'>
-              <>
-                <ReactSVG src='../../img/svg/CCC-logo-full.svg'></ReactSVG>
-                <NavList main={true} open={open} setOpen={setOpen} />
-                <Burger
-                  main={true}
-                  navBar={navBar}
-                  setOpen={setOpen}
-                  open={open}
-                />
-              </>
-            </div>
+          <div className='navigation__inner flex justify-between 1070:justify-end items-start'>
+            <>
+              <ReactSVG
+                className='navigation__logo'
+                src='../../img/svg/CCC-logo-full.svg'></ReactSVG>
+              <NavList main={true} open={open} setOpen={setOpen} />
+              <Burger
+                main={true}
+                navBar={navBar}
+                setOpen={setOpen}
+                open={open}
+              />
+            </>
           </div>
         </nav>
       </header>

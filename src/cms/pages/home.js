@@ -109,6 +109,20 @@ const homePage = {
       required: false,
     },
     {
+      label: 'Projectsbar',
+      name: 'projectsbar',
+      widget: 'markdown',
+      default: '',
+      required: false,
+    },
+    {
+      label: 'Projectsbarmobile',
+      name: 'projectsbarmobile',
+      widget: 'markdown',
+      default: '',
+      required: false,
+    },
+    {
       label: 'Projectstext',
       name: 'projectstext',
       widget: 'string',

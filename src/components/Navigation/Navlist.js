@@ -1,41 +1,65 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import ReactSVG from 'react-svg'
 
 const Navlist = ({ main, open, setOpen }) => {
   return (
     <>
       <div
         className={
-          'navigation-list' +
+          'navigation__list' +
           ' ' +
-          (open ? 'navigation-open' : 'navigation-closed')
+          (open ? 'navigation__list--open' : 'navigation__list--closed')
         }>
-        {/* <ReactSVG src="/img/svg/logo-white.svg" className="logo-nav" /> */}
-        <Link onClick={() => setOpen(false)} to='/' className='nav__link'>
+        <Link
+          onClick={() => setOpen(false)}
+          to='/'
+          className='navigation__link'>
           O nas
         </Link>
-        <Link onClick={() => setOpen(false)} to='/about' className='nav__link'>
+        <Link
+          onClick={() => setOpen(false)}
+          to='/about'
+          className='navigation__link'>
           Co robimy
         </Link>
         <Link
           onClick={() => setOpen(false)}
           to='/projects'
-          className='nav__link'>
+          className='navigation__link'>
           Realizacje
         </Link>
         <Link
           onClick={() => setOpen(false)}
           to='/services'
-          className='nav__link'>
-          Usługi towarzyszące
+          className='navigation__link'>
+          Usługi
         </Link>
         <Link
           onClick={() => setOpen(false)}
           to='#contact'
-          className='nav__link'>
+          className='navigation__link'>
           Kontakt
         </Link>
+        <div className='navigation__list--social'>
+          <a
+            href='https://www.Instagram.com'
+            target='_blank'
+            rel='noopener noreferrer'>
+            Instagram
+          </a>
+          <a
+            href='https://www.Facebook.com'
+            target='_blank'
+            rel='noopener noreferrer'>
+            Facebook
+          </a>
+          <a
+            href='https://www.Twitter.com'
+            target='_blank'
+            rel='noopener noreferrer'>
+            Twitter
+          </a>
+        </div>
       </div>
     </>
   )

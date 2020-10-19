@@ -36,7 +36,11 @@ h1,
 
 h2,
 .title-2 {
-  @apply text-h2;
+  @apply text-h2mobile;
+
+  @screen 1070 {
+    @apply text-h2;
+  }
 }
 
 h3,

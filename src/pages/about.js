@@ -14,15 +14,15 @@ export const AboutPageTemplate = ({ data }) => {
   return (
     <>
       <div className='bg-green mt-8 overflow-x-hidden'>
-        <section className='hero  relative'>
-          <div className='container-lg '>
+        <section className='hero relative'>
+          <div className='container-lg px-0 900:px-30 '>
             <div className='spinner-wrap relative'>
               <Img
                 fluid={pageData.herobackground.childImageSharp.fluid}
                 className='hero__sub--bg'
               />
-              <div className='scroll-svg-wrap'>
-                <ScrollRotate throttle={0.1} loops={1} animationDuration={5}>
+              <div className='scroll-svg-wrap '>
+                <ScrollRotate method={'prec'} loops={1} animationDuration={5}>
                   <ReactSVG
                     className='spinner-large'
                     src='../../img/svg/spinner-large.svg'
@@ -34,12 +34,24 @@ export const AboutPageTemplate = ({ data }) => {
         </section>
         <section className='topsection py-24'>
           <div className='container'>
-            <div className='flex justify-between'>
-              <div className='col'>
+            <div className='col-container flex flex-col 900:flex-row 900:justify-between'>
+              <div className='col pb-0 900:pb-24'>
                 <ReactMarkdown
                   className='markdown-cozy text-yellow markdown__weddings'
                   source={pageData.weddings}
                 />
+              </div>
+              <div className='scroll-svg-wrap--mobile '>
+                <ScrollRotate
+                  style={{ right: '-180px' }}
+                  method={'prec'}
+                  loops={1}
+                  animationDuration={5}>
+                  <ReactSVG
+                    className='spinner-mobile'
+                    src='../../img/svg/spinner-large.svg'
+                  />
+                </ScrollRotate>
               </div>
               <div className='col'>
                 <ReactMarkdown
@@ -52,7 +64,7 @@ export const AboutPageTemplate = ({ data }) => {
         </section>
         <section className='events bg-white py-24'>
           <div className='container'>
-            <div className='flex justify-between'>
+            <div className='col-container flex flex-col-reverse 900:flex-row 900:justify-between'>
               <div className='col'>
                 <Img fluid={pageData.eventsimg.childImageSharp.fluid} />
               </div>
@@ -67,7 +79,7 @@ export const AboutPageTemplate = ({ data }) => {
         </section>
         <section className='events bg-cream  py-24'>
           <div className='container'>
-            <div className='flex justify-between'>
+            <div className='col-container flex flex-col 900:flex-row 900:justify-between'>
               <div className='col'>
                 {' '}
                 <ReactMarkdown
@@ -81,10 +93,9 @@ export const AboutPageTemplate = ({ data }) => {
             </div>
             <figure className='line-full' />
             <ReactMarkdown
-              className='markdown-cozy text-red text-center'
+              className='markdown-cozy markdown__consultancybar text-red'
               source={pageData.consultancybar}
             />
-            <ReactSVG className='mx-auto' src='../../img/svg/spinner.svg' />
           </div>
         </section>
       </div>

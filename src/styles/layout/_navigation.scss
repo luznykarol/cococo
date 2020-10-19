@@ -2,8 +2,126 @@
   height: 15px;
   width: auto;
 }
+header {
+  z-index: 2000;
+  position: relative;
+}
 .navigation {
-  padding: 25px 0 0 0;
+  z-index: 2000;
+  padding: 15px 0 0 0;
+
+  @screen md {
+    padding: 25px 0 0 0;
+  }
+
+  &__logo {
+    @apply relative;
+
+    // max-width: 296px;
+    width: 100%;
+    max-width: 520px;
+    div {
+      height: 100%;
+      width: 100%;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @screen 1070 {
+      @apply absolute;
+      left: 30px;
+    }
+  }
+  &__list {
+    position: absolute;
+    transition: 0.4s all linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    @apply bg-cream;
+    width: 100%;
+    left: 0;
+    padding: 15px;
+
+    &--open {
+      top: 0;
+      opacity: 1;
+      height: 100vh;
+    }
+
+    &--closed {
+      height: 0;
+      opacity: 0;
+      top: -200%;
+    }
+
+    @screen 1070 {
+      padding: 0;
+      background: transparent;
+      @apply flex;
+      opacity: 1;
+      height: auto;
+      top: initial;
+      right: initial;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      width: initial;
+    }
+
+    &--social {
+      margin-top: 20px;
+      @apply flex flex-col absolute;
+      bottom: 30px;
+
+      a {
+        &:not(:last-of-type) {
+          margin-bottom: 10px;
+        }
+      }
+
+      @screen 1070 {
+        @apply hidden;
+      }
+    }
+  }
+
+  &__link {
+    @apply uppercase relative font-cozy font-bold;
+    padding-bottom: 5px;
+    font-weight: 2rem;
+    @screen 1070 {
+      @apply text-base font-para;
+      &:after {
+        transform: scaleX(0);
+        bottom: 3px;
+        left: 0;
+        @apply bg-black absolute block;
+        width: 100%;
+        content: '';
+        height: 1px;
+        transition: transform 250ms ease-in-out;
+        transform-origin: 100% 50%;
+      }
+
+      &:hover {
+        background-position: 0%;
+        background-size: 340% 100%;
+
+        &:after {
+          @apply bg-black;
+          transform: scaleX(1);
+          transform-origin: 0 50%;
+        }
+      }
+      &:not(:last-of-type) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
 .header {
   // transform: translate(-50%, 0);
@@ -32,37 +150,6 @@
   }
 }
 
-.nav__link {
-  @apply uppercase relative;
-  padding-bottom: 5px;
-
-  &:after {
-    transform: scaleX(0);
-    bottom: 3px;
-    left: 0;
-    @apply bg-black absolute block;
-    width: 100%;
-    content: '';
-    height: 1px;
-    transition: transform 250ms ease-in-out;
-    transform-origin: 100% 50%;
-  }
-
-  &:hover {
-    background-position: 0%;
-    background-size: 340% 100%;
-
-    &:after {
-      @apply bg-black;
-      transform: scaleX(1);
-      transform-origin: 0 50%;
-    }
-  }
-  &:not(:last-of-type) {
-    margin-right: 30px;
-  }
-}
-
 .std-para {
   @apply text-base leading-tight font-para;
 }
@@ -71,18 +158,23 @@
   max-width: 1170px;
 }
 
-.burger {
-  display: none;
-}
-
 .footer {
   &__form {
-    max-width: 346px;
+    max-width: 440px;
     width: 100%;
+
+    @screen 900 {
+      max-width: 346px;
+      @apply mx-0;
+    }
   }
   &__info {
-    max-width: 586px;
+    max-width: 100%;
     width: 100%;
+
+    @screen 900 {
+      max-width: 586px;
+    }
   }
 }
 
@@ -149,5 +241,60 @@
     transform: translate(-50%, -50%);
 
     // transform: rotate(45deg);
+  }
+}
+
+.burger {
+  width: 28px;
+  height: 24px;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  z-index: 2002;
+  cursor: pointer;
+  display: block;
+
+  @screen md {
+    right: 30px;
+  }
+
+  span {
+    @apply bg-black;
+    border-radius: 5px;
+    position: absolute;
+    width: 100%;
+    transform: rotate(0deg);
+    height: 3px;
+    transition: 0.3s ease-in-out;
+    transform-origin: left center;
+    &:nth-of-type(1) {
+      top: 0;
+    }
+    &:nth-of-type(2) {
+      top: 10px;
+    }
+    &:nth-of-type(3) {
+      top: 20px;
+    }
+  }
+
+  &-open {
+    span {
+      &:nth-of-type(1) {
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        opacity: 0;
+      }
+      &:nth-of-type(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  @media (min-width: 1070px) {
+    display: none;
+  }
+  @screen 1070 {
+    right: 30px;
   }
 }

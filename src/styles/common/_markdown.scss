@@ -20,7 +20,7 @@
     max-width: 605px;
   }
   &__consultancybar {
-    max-width: 340px;
+    max-width: 300px;
 
     h5 {
       @apply text-h5 font-cozy;
@@ -37,11 +37,17 @@
   }
 
   p {
-    @apply text-h5  font-cozy-italic;
-    line-height: 1.6;
+    @apply text-h6  font-cozy-italic;
+
+    line-height: 26px;
 
     &:not(:last-of-type) {
       @apply mb-5;
+    }
+
+    @screen 414 {
+      line-height: 1.6;
+      @apply text-h5;
     }
   }
 }

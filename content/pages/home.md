@@ -44,6 +44,20 @@ projectsbar: >-
   ## / make up / grafik / pokaz flair
 
   ## / chef kuchni / kelnerzy
+projectsbarmobile: >-
+  Fotograf  
+
+  filmowiec  
+
+  weddingplanner  
+
+  make up  
+
+  pokaz flair  
+
+  chef kuchni  
+
+  kelnerzy
 projectstext: >-
   Częścią cozy są też nasi przyjaciele zajmujący się usługami, które mogą wzbogacić Twoją imprezę, akcję promocyjną, czy tworzenie konceptu. Działając razem nasz potencjał się mnoży a wrażenia z całości będą bardziej spójne i proporcjonalnie większe.
 ---

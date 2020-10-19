@@ -8,32 +8,29 @@ import ReactMarkdown from 'react-markdown'
 
 export const HomePageTemplate = ({ data }) => {
   const pageData = data.markdownRemark.frontmatter
-
-  console.log('indexdata', pageData)
-  // const { frontmatter } = data.markdownRemark
   return (
     <>
       <div className='bg-yellow mt-8'>
         <section className='hero pb-20'>
-          <div className='container-lg '>
-            {/* <BackgroundImage /> */}
+          <div className='container-lg px-0 900:px-30'>
             <Img
               fluid={pageData.herobackground.childImageSharp.fluid}
               className='hero__main--bg'></Img>
+          </div>
+          <div className='container-lg '>
             <div className='hero-info-wrap'>
-              {' '}
-              <div className='flex justify-between'>
-                <div>
+              <div className='flex flex-col-reverse 900:flex-row 900:justify-between '>
+                <div className='flex flex-col-reverse 900:flex-col'>
                   <ReactMarkdown
                     className='herobackgroundsignature mt-5 font-bold'
                     source={pageData.herobackgroundsignature}
                   />
                   <ReactMarkdown
-                    className='aboutleft markdown-wrap std-para mt-12'
+                    className='aboutleft markdown-wrap std-para 900:mt-12'
                     source={pageData.aboutleft}
                   />
                 </div>
-                <div className='col pt-13'>
+                <div className='col md:pt-13 pt-4'>
                   <ReactSVG className='' src='../../img/svg/spinner.svg' />
                   <ReactMarkdown
                     className='pt-20 aboutright markdown-cozy'
@@ -46,15 +43,20 @@ export const HomePageTemplate = ({ data }) => {
         </section>
         <section className='about-bar bg-white py-20'>
           <div className='container'>
-            <div className='flex justify-between items-center'>
-              <div className='flex items-center'>
-                <p className='font-bold mr-16'>{pageData.abouthelper}</p>
+            <div className='flex flex-col md:flex-row md:justify-between md:items-center '>
+              <div className='flex flex-col md:flex-row md:items-center items-start'>
+                <p className='font-bold mb-30 md:mb-0 md:mr-16 '>
+                  {pageData.abouthelper}
+                </p>
                 <ReactMarkdown
                   className='aboutbar font-cozy leading-64 font-bold '
                   source={pageData.aboutbar}
                 />
               </div>
-              <ReactSVG src='../../img/svg/arrowRight.svg' />
+              <ReactSVG
+                className='flex justify-end mt-30 md:mt-0'
+                src='../../img/svg/arrowRight.svg'
+              />
             </div>
           </div>
         </section>
@@ -66,8 +68,9 @@ export const HomePageTemplate = ({ data }) => {
               <p>{pageData.projectshelper}</p>
             </div>
             <div className='collage-wrap pt-8'>
-              <div className='flex'>
-                <div className='collage-col w-2/5 flex flex-col items-end'>
+              <div className='flex flex-col md:flex-row'>
+                <div className='collage-col flex flex-col items-center md:w-2/5 md:items-end'>
+                  {' '}
                   <Img
                     className='collage-item collage-1'
                     fluid={pageData.collage1.childImageSharp.fluid}
@@ -77,7 +80,7 @@ export const HomePageTemplate = ({ data }) => {
                     fluid={pageData.collage3.childImageSharp.fluid}
                   />
                 </div>
-                <div className='collage-col w-3/5'>
+                <div className='collage-col flex flex-col items-center md:w-3/5 md:items-start'>
                   <Img
                     className='collage-item collage-2'
                     fluid={pageData.collage2.childImageSharp.fluid}
@@ -93,6 +96,10 @@ export const HomePageTemplate = ({ data }) => {
             <ReactMarkdown
               className='projectsbar text-center text-yellow font-cozy leading-64 font-bold pt-34'
               source={pageData.projectsbar}
+            />
+            <ReactMarkdown
+              className='projectsbarmobile text-center text-yellow font-cozy leading-64 font-bold pt-34'
+              source={pageData.projectsbarmobile}
             />
             <ReactSVG
               className='mx-auto pt-10'
@@ -144,6 +151,7 @@ export const pageQuery = graphql`
         abouthelper
         projectshelper
         projectsbar
+        projectsbarmobile
         projectstext
         collage1 {
           childImageSharp {

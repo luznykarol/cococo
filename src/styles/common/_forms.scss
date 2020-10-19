@@ -110,7 +110,7 @@
     @apply font-bold relative text-yellow text-left;
   }
   button {
-    @apply border-yellow text-yellow mt-32 mx-auto;
+    @apply border-yellow text-yellow mt-20  mx-auto;
     border: 1px solid;
     border-radius: 40px;
     width: 100%;
@@ -120,6 +120,10 @@
 
     &:hover {
       @apply bg-yellow text-red;
+    }
+
+    @screen lg {
+      @apply mt-32;
     }
   }
 }
