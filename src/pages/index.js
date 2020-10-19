@@ -60,7 +60,7 @@ export const HomePageTemplate = ({ data }) => {
             </div>
           </div>
         </section>
-        <section className='projects bg-cream py-20'>
+        <section className='projects bg-cream py-20' id='projects'>
           <div className='container'>
             <div className='flex items-center'>
               <ReactSVG src='../../img/svg/CCC-sygnet.svg' />

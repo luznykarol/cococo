@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
 import ReactSVG from 'react-svg'
 import { useLocation } from '@reach/router'
-import NavList from '@/components/Navigation/Navlist'
 import Burger from '@/components/Navigation/Burger'
+import scrollTo from 'gatsby-plugin-smoothscroll'
 
 const Navbar = () => {
   const location = useLocation()
@@ -43,7 +43,80 @@ const Navbar = () => {
               <ReactSVG
                 className='navigation__logo'
                 src='../../img/svg/CCC-logo-full.svg'></ReactSVG>
-              <NavList main={true} open={open} setOpen={setOpen} />
+              <div
+                className={
+                  'navigation__list' +
+                  ' ' +
+                  (open ? 'navigation__list--open' : 'navigation__list--closed')
+                }>
+                <Link
+                  onClick={() => setOpen(false)}
+                  to='/'
+                  className='navigation__link'>
+                  O nas
+                </Link>
+                <Link
+                  onClick={() => setOpen(false)}
+                  to='/about'
+                  className='navigation__link'>
+                  Co robimy
+                </Link>
+                {pathname == '/' ? (
+                  <a
+                    className='navigation__link'
+                    onClick={() => {
+                      setOpen(false)
+                      scrollTo('#projects')
+                    }}>
+                    Realizacje
+                  </a>
+                ) : (
+                  <Link
+                    to='/#projects'
+                    onClick={() => {
+                      setOpen(false)
+                    }}
+                    // onClick={() => scrollTo('/#services')}
+                    className='navigation__link'>
+                    Realizacje
+                  </Link>
+                )}
+
+                <Link
+                  onClick={() => setOpen(false)}
+                  to='/'
+                  className='navigation__link'>
+                  Usługi
+                </Link>
+                <a
+                  className='navigation__link'
+                  onClick={() => {
+                    setOpen(false)
+                    scrollTo('#contact')
+                  }}>
+                  Kontakt
+                </a>
+                <div className='navigation__list--social'>
+                  <a
+                    href='https://www.Instagram.com'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    Instagram
+                  </a>
+                  <a
+                    href='https://www.Facebook.com'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    Facebook
+                  </a>
+                  <a
+                    href='https://www.Twitter.com'
+                    target='_blank'
+                    rel='noopener noreferrer'>
+                    Twitter
+                  </a>
+                </div>
+              </div>
               <Burger
                 main={true}
                 navBar={navBar}
