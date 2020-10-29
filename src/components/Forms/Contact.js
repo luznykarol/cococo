@@ -15,12 +15,12 @@ export default class ContactForm extends Component {
     this.state = {
       name: '',
       email: '',
-      company: '',
       cityName: '',
       eventType: '',
       acceptance: '',
       emailValid: true,
       nameValid: true,
+      eventValid: true,
       // messageValid: true,
       formValid: false,
       isSending: false,
@@ -36,7 +36,6 @@ export default class ContactForm extends Component {
   }
 
   handleCheckbox(e) {
-    console.log(this.state.acceptance)
     this.setState({ acceptance: e.target.checked })
   }
 
@@ -57,12 +56,16 @@ export default class ContactForm extends Component {
     this.setState({
       email: '',
       name: '',
+      acceptance: '',
+      cityName: '',
+      eventType: '',
     })
   }
 
   validateField(fieldName, value) {
     let emailValid = this.state.emailValid
     let nameValid = this.state.nameValid
+    let eventValid = this.state.eventValid
 
     switch (fieldName) {
       case 'email':
@@ -70,6 +73,9 @@ export default class ContactForm extends Component {
         break
       case 'name':
         nameValid = value.length >= 1
+        break
+      case 'eventType':
+        eventValid = value.length >= 1
         break
       default:
         break
@@ -79,6 +85,7 @@ export default class ContactForm extends Component {
       {
         emailValid: emailValid,
         nameValid: nameValid,
+        eventValid: eventValid,
         // messageValid: messageValid,
       },
       this.validateForm,
@@ -94,7 +101,10 @@ export default class ContactForm extends Component {
     e.preventDefault()
     if (!this.state.isSending && this.state.formValid) {
       this.setState({
-        formValid: this.state.emailValid && this.state.nameValid,
+        formValid:
+          this.state.emailValid &&
+          this.state.nameValid &&
+          this.state.eventValid,
       })
       fetch('/', {
         method: 'POST',
@@ -102,6 +112,7 @@ export default class ContactForm extends Component {
         body: encode({ 'form-name': contactTitle, ...this.state }),
       })
         .then(() => {
+          console.log('stan', this.state)
           this.setState({
             isSending: false,
             isSend: true,
@@ -149,6 +160,9 @@ export default class ContactForm extends Component {
             error={this.state.emailValid}
             errorMessage='Wpisz poprawny adres email'
           />
+        </div>
+        <div>
+          <input type='hidden' name='form-name' value='contact' />
         </div>
         <div className='field-grouped'>
           <InputField

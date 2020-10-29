@@ -37,7 +37,7 @@ const Navlist = ({ main, open, setOpen }) => {
         <Link
           onClick={() => setOpen(false)}
           to='#contact'
-          className='navigation__link'>
+          className='navigation__link cursor-pointer'>
           Kontakt
         </Link>
       </div>

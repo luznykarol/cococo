@@ -71,7 +71,7 @@ const Footer = () => {
             />
           </div>
           <div className='footer__form mt-20 lg:mt-0'>
-            <Form />
+            <Form formTitle='Contact Form' />
           </div>
           <div className='text-yellow mt-10 block lg:hidden '>
             <p className='font-bold '>{footerData.contact.text}</p>

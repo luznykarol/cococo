@@ -102,7 +102,7 @@ header {
         @apply bg-black absolute block;
         width: 100%;
         content: '';
-        height: 1px;
+        height: 2px;
         transition: transform 250ms ease-in-out;
         transform-origin: 100% 50%;
       }
