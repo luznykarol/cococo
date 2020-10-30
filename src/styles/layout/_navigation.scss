@@ -101,7 +101,7 @@ header {
         left: 0;
         @apply bg-black absolute block;
         width: 100%;
-        content: '';
+        content: "";
         height: 2px;
         transition: transform 250ms ease-in-out;
         transform-origin: 100% 50%;
@@ -190,7 +190,7 @@ header {
 
   // Box.
   & + label:before {
-    content: '';
+    content: "";
     // margin-right: 10px;
     display: inline-block;
     vertical-align: text-top;
@@ -230,13 +230,13 @@ header {
 
   // Checkmark. Could be replaced with an image
   &:checked + label:after {
-    content: '';
+    content: "";
     position: absolute;
-    left: 10px;
-    top: 10px;
+    left: 50%;
+    top: 50%;
     background: #f7bc16;
-    width: 14px;
-    height: 14px;
+    width: 13px;
+    height: 13px;
     border-radius: 50%;
     transform: translate(-50%, -50%);
 

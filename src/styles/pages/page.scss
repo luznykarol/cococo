@@ -15,13 +15,18 @@
 }
 
 .hero__main--bg {
-  min-height: 480px;
+  @screen md {
+    min-height: 480px;
+  }
 }
 
 .hero__sub--bg {
   max-width: 100%;
   width: 100%;
-  min-height: 415px;
+
+  @screen md {
+    min-height: 415px;
+  }
   @screen 1070 {
     max-width: calc(100% - 300px);
   }
