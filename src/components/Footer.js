@@ -54,13 +54,14 @@ const Footer = () => {
               </a>
             </div>
             <ReactMarkdown
-              className="text-yellow text-left hidden lg:block md:max-w-full mt-5"
+              className="text-yellow text-left hidden lg:block md:max-w-full mt-5 link-block"
               source={footerData.socials}
               renderers={{
                 link: (props) => (
                   <a
                     href={props.href}
                     target="_blank"
+                    className="block"
                     rel="noopener noreferrer">
                     {props.children}
                   </a>

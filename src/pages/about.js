@@ -32,7 +32,7 @@ export const AboutPageTemplate = ({ data }) => {
                 className="hero__sub--bg"
               />
               <div className="scroll-svg-wrap">
-                <ScrollRotate method={"perc"} loops={1}>
+                <ScrollRotate animationDuration={3} loops={1} to={1420}>
                   <ReactSVG
                     className="spinner-large"
                     src="../../img/svg/spinner-large.svg"
@@ -89,6 +89,7 @@ export const AboutPageTemplate = ({ data }) => {
         </section>
         <section className="events bg-cream  py-24">
           <div className="container">
+            <h2 className="special font-cozy">Doradztwo barowe</h2>
             <div className="col-container flex flex-col 900:flex-row 900:justify-between">
               <div className="col">
                 {" "}
@@ -97,8 +98,12 @@ export const AboutPageTemplate = ({ data }) => {
                   source={pageData.consultancy}
                 />
               </div>
-              <div className="col">
-                <Img fluid={pageData.consultancyimg.childImageSharp.fluid} />
+              <div className="col ">
+                {/* <Img fluid={pageData.consultancyimg.childImageSharp.fluid} /> */}
+                <ReactMarkdown
+                  className="markdown__consultancy markdown-cozy text-green"
+                  source={pageData.consultancyright}
+                />
               </div>
             </div>
             <figure className="line-full" />
@@ -159,6 +164,7 @@ export const pageQuery = graphql`
           }
         }
         consultancy
+        consultancyright
         consultancybar
         seo {
           description

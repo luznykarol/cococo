@@ -30,14 +30,11 @@ events: >-
   Wybierz jeden z oferowanych przez nas autorskich scenariuszy lub napisz do nas, i pozwól nam zaprojektować bar na Twoje wydarzenie.
 consultancyimg: /img/stock.png
 consultancy: >-
-  ## Doradztwo barowe 
-
   Tworzenie barów od podszewki to dla nas największa przyjemność. Pomożemy Ci zarówno jeżeli masz już funkcjonujący bar i chcesz usprawnić działalnośc tej częsci restauracji, a także jeśli potrzebujesz doradztwa przy całkowicie nowym projekcie
 
 
   Napiszemy autorskie menu koktajlowe pasujące do filozofii Twojego konceptu, wyselekcjonujemy wina, piwa, alkohole mocne oraz napoje bezalkoholowe. Rozpiszemy receptury, wyliczymy marżę i odpowiednio wycenimy wszystkie pozycje w menu
-
-
+consultancyright: >-
   Zajmiemy się rekrutacją i wyszkoleniem Twojego zespołu. Skonsultujemy projekt techniczny baru, tak aby zapewnić możliwie najlepszą ergonomię pracy i sprawny serwis. Podzielimy się siątką kontaktów, od najbardziej opłacalnych dostawców po najlepszych fotografów koktajlowych.
 
 

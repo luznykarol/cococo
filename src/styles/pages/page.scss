@@ -6,6 +6,17 @@
   }
 }
 
+.link-block {
+  a {
+    @apply block;
+  }
+}
+.special {
+  font-weight: 700;
+  margin-bottom: 3rem;
+  line-height: 1.2;
+  @apply text-green;
+}
 .links {
   @apply flex justify-center flex-wrap items-center mt-6;
   &__item {
