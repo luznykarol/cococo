@@ -32,7 +32,7 @@ export const AboutPageTemplate = ({ data }) => {
                 className="hero__sub--bg"
               />
               <div className="scroll-svg-wrap">
-                <ScrollRotate animationDuration={4} loops={6} to={3600}>
+                <ScrollRotate method={"perc"} loops={1}>
                   <ReactSVG
                     className="spinner-large"
                     src="../../img/svg/spinner-large.svg"
