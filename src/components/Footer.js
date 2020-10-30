@@ -54,7 +54,7 @@ const Footer = () => {
               </a>
             </div>
             <ReactMarkdown
-              className="text-yellow text-left hidden lg:block md:max-w-full mt-5 link-block"
+              className="text-yellow text-left hidden lg:block md:max-w-full mt-5 "
               source={footerData.socials}
               renderers={{
                 link: (props) => (
@@ -82,7 +82,7 @@ const Footer = () => {
             </a>
           </div>
           <ReactMarkdown
-            className="text-yellow text-left block lg:hidden md:max-w-full mt-5"
+            className="text-yellow text-left block lg:hidden md:max-w-full mt-5 link-block"
             source={footerData.socials}
             renderers={{
               link: (props) => (
