@@ -18,7 +18,6 @@ const footer = {
           name: "image",
           widget: "file",
           required: false,
-          a,
         },
         {
           label: "Text",
