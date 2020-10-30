@@ -5,11 +5,24 @@ import Layout from "@/components/Layout"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
 import { ScrollRotate } from "react-scroll-rotate"
+import Helmet from "react-helmet"
+import SEO from "@/helpers/SEOHelper.js"
 
 export const HomePageTemplate = ({ data }) => {
   const pageData = data.markdownRemark.frontmatter
+  const seo = data.markdownRemark.frontmatter.seo
   return (
     <>
+      <Helmet>
+        <meta name="description" content={SEO.description(seo.description)} />
+        <meta property="og:title" content={SEO.title(seo.title)} />
+        <meta
+          property="og:description"
+          content={SEO.description(seo.description)}
+        />
+        <meta property="og:image" content={SEO.image(seo.image)} />
+        <title>{SEO.title(seo.title)}</title>
+      </Helmet>
       <div className="bg-yellow mt-8">
         <section className="hero pb-20">
           <div className="container-lg px-0 900:px-30">
@@ -186,6 +199,10 @@ export const pageQuery = graphql`
               ...GatsbyImageSharpFluid_withWebp
             }
           }
+        }
+        seo {
+          description
+          title
         }
       }
     }

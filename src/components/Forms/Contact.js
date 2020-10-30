@@ -22,7 +22,7 @@ export default class ContactForm extends Component {
       nameValid: true,
       formValid: false,
       isSending: false,
-      isSend: true,
+      isSend: false,
       formError: false,
     }
 
@@ -36,7 +36,6 @@ export default class ContactForm extends Component {
 
   handleCheckbox(e) {
     this.setState({ acceptance: !this.state.acceptance })
-    console.log(e.target)
   }
 
   handleChange(e) {

@@ -93,6 +93,7 @@ header {
     @apply capitalize relative font-cozy font-bold;
     padding-bottom: 5px;
     font-size: 2rem;
+    cursor: pointer;
     @screen 1070 {
       @apply text-base font-para uppercase;
       &:after {

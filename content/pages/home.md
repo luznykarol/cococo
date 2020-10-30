@@ -1,7 +1,7 @@
 ---
 template: index
 type: page
-title: Henlo
+title: Cozy Cocktail Collective
 
 herobackground: /img/hero_main.png
 herobackgroundsignature: >-
@@ -60,4 +60,7 @@ projectsbarmobile: >-
   kelnerzy
 projectstext: >-
   Częścią cozy są też nasi przyjaciele zajmujący się usługami, które mogą wzbogacić Twoją imprezę, akcję promocyjną, czy tworzenie konceptu. Działając razem nasz potencjał się mnoży a wrażenia z całości będą bardziej spójne i proporcjonalnie większe.
+seo:
+  title: Cozy Cocktail Collective
+  description: Cozy powstało by przenieść Twoje ulubione barowe doświadczenia w miejsce najważniejszych wydarzeń Twojego życia
 ---

@@ -1,7 +1,7 @@
 ---
 template: about
 type: page
-title: Henlo
+title: Cozy Cocktail Collective
 herobackground: /img/hero_sub.png
 weddings: >-
   ## Wesela
@@ -44,4 +44,7 @@ consultancy: >-
   Wybierz jeden z oferowanych przez nas autorskich scenariuszy lub napisz do nas, i pozwól nam zaprojektować bar na Twoje wydarzenie.
 consultancybar: >-
   Skontaktuj się z nami i opowiedz o swoich potrzebach - my zajmiemy się resztą.
+seo:
+  title: Cozy Cocktail Collective
+  description: Eventy, Wesela, Cocktail Scenarios, Doradztwo Barowe
 ---

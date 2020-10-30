@@ -4,15 +4,25 @@ import ReactSVG from "react-svg"
 import Layout from "@/components/Layout"
 import Img from "gatsby-image"
 import ReactMarkdown from "react-markdown"
-import BackgroundImage from "gatsby-background-image"
 import { ScrollRotate } from "react-scroll-rotate"
+import Helmet from "react-helmet"
+import SEO from "@/helpers/SEOHelper.js"
 
 export const AboutPageTemplate = ({ data }) => {
   const pageData = data.markdownRemark.frontmatter
-
-  console.log("aboutdata", pageData)
+  const seo = data.markdownRemark.frontmatter.seo
   return (
     <>
+      <Helmet>
+        <meta name="description" content={SEO.description(seo.description)} />
+        <meta property="og:title" content={SEO.title(seo.title)} />
+        <meta
+          property="og:description"
+          content={SEO.description(seo.description)}
+        />
+        <meta property="og:image" content={SEO.image(seo.image)} />
+        <title>{SEO.title(seo.title)}</title>
+      </Helmet>
       <div className="bg-green mt-8 overflow-x-hidden">
         <section className="hero relative">
           <div className="container-lg px-0 900:px-30 ">
@@ -22,7 +32,7 @@ export const AboutPageTemplate = ({ data }) => {
                 className="hero__sub--bg"
               />
               <div className="scroll-svg-wrap">
-                <ScrollRotate animationDuration={1} loops={1} to={1420}>
+                <ScrollRotate animationDuration={4} loops={6} to={3600}>
                   <ReactSVG
                     className="spinner-large"
                     src="../../img/svg/spinner-large.svg"
@@ -150,6 +160,10 @@ export const pageQuery = graphql`
         }
         consultancy
         consultancybar
+        seo {
+          description
+          title
+        }
       }
     }
   }
