@@ -39,7 +39,10 @@ const Footer = () => {
       <div className="container ">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="footer__info">
-            <ReactSVG className="mb-30" src={footerData.image.publicURL} />
+            <ReactSVG
+              className="footer-arrow mb-30"
+              src={footerData.image.publicURL}
+            />
 
             <h2 className="text-yellow text-left text-h5 font-cozy">
               {footerData.heading}

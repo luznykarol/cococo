@@ -42,27 +42,7 @@ const footer = {
     {
       label: "Socials",
       name: "socials",
-      widget: "object",
-      fields: [
-        {
-          label: "Instagram",
-          name: "instagram",
-          widget: "string",
-          required: false,
-        },
-        {
-          label: "Facebook",
-          name: "facebook",
-          widget: "string",
-          required: false,
-        },
-        {
-          label: "Twitter",
-          name: "twitter",
-          widget: "string",
-          required: false,
-        },
-      ],
+      widget: "markdown",
     },
   ],
 }
