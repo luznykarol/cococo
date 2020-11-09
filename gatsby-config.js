@@ -34,6 +34,7 @@ module.exports = {
         ],
       },
     },
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -54,6 +55,14 @@ module.exports = {
       options: {
         path: `${__dirname}/content`,
         name: "pages",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: "bwm7ruk",
+        },
       },
     },
     "gatsby-plugin-react-helmet",

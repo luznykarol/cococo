@@ -17,7 +17,9 @@
 
 .markdown {
   &__events {
-    max-width: 605px;
+    @screen 900 {
+      max-width: 605px;
+    }
   }
   &__consultancybar {
     max-width: 300px;

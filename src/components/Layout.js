@@ -28,6 +28,7 @@ const TemplateWrapper = ({ children }) => {
           sizes="180x180"
           href="/img/favicons/apple-touch-icon.png"
         />
+
         <link
           rel="icon"
           type="image/png"

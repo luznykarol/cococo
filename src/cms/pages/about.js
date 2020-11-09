@@ -60,6 +60,20 @@ const aboutPage = {
       required: false,
     },
     {
+      label: "Workshops",
+      name: "workshops",
+      widget: "markdown",
+      default: "",
+      required: false,
+    },
+    {
+      label: "Workshopsright",
+      name: "workshopsright",
+      widget: "markdown",
+      default: "",
+      required: false,
+    },
+    {
       label: "Consultancy",
       name: "consultancy",
       widget: "markdown",

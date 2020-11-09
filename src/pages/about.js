@@ -89,7 +89,7 @@ export const AboutPageTemplate = ({ data }) => {
         </section>
         <section className="events bg-cream  py-24">
           <div className="container">
-            <h2 className="special font-cozy">Doradztwo barowe</h2>
+            <h2 className="text-green special font-cozy">Doradztwo barowe</h2>
             <div className="col-container flex flex-col 900:flex-row 900:justify-between">
               <div className="col">
                 {" "}
@@ -103,6 +103,28 @@ export const AboutPageTemplate = ({ data }) => {
                 <ReactMarkdown
                   className="markdown__consultancy markdown-cozy text-green"
                   source={pageData.consultancyright}
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="events bg-white py-24">
+          <div className="container">
+            <h2 className="text-black special font-cozy">
+              Warsztaty koktajlowe
+            </h2>
+            <div className="col-container flex flex-col-reverse 900:flex-row 900:justify-between">
+              <div className="col">
+                {" "}
+                <ReactMarkdown
+                  className="markdown__events  markdown-cozy"
+                  source={pageData.workshops}
+                />
+              </div>
+              <div className="col flex items-center">
+                <ReactMarkdown
+                  className="markdown__events  markdown-cozy"
+                  source={pageData.workshopsright}
                 />
               </div>
             </div>
@@ -149,6 +171,8 @@ export const pageQuery = graphql`
         weddings
         scenarios
         events
+        workshops
+        workshopsright
         eventsimg {
           childImageSharp {
             fluid(quality: 70, maxWidth: 1900) {
