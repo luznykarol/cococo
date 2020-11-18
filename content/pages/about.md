@@ -5,16 +5,17 @@ herobackground: /img/hero_sub.png
 weddings: >-
   ## Wesela
 
+
   Koktajl bar na weselu
 
 
-  Od wielu lat zdobywamy  doświadczenie w najlepszych koktajlbarach w Polsce in a świecie. Teraz przeniesiemy najwyższą jakość w organizacji i obsłudze baru na Twoje wesele.
+  Od wielu lat zdobywamy doświadczenie w najlepszych koktajlbarach w Polsce i na świecie. Teraz przeniesiemy najwyższą jakość w organizacji i obsłudze baru na Twoje wesele.
 
 
   Przygotowujemy autorskie menu koktajlowe spójne ze stylistyką Twojego przyjęcia, zaaranżujemy bar, dobierzemy wina i przaygotujemy selekcję alkoholi premium.
 
 
-  Mówiąc krótko, zadbamy o to, aby każdy toast był niezapomniany. Skontaktuj się z nami, opowiedz nam o swoim wymarzonym weselu, a my przygotujemy Tobie spersonalizowaną ofertę.
+  Mówiąc krótko, zadbamy o to, aby każdy toast był niezapomniany. Skontaktuj się z nami, opowiedz nam o swoim wymarzonym weselu, a my przygotujemy dla Ciebie spersonalizowaną ofertę.
 scenarios: >-
   ## Cocktail Scenarios
 
