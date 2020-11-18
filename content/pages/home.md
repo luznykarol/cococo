@@ -26,8 +26,10 @@ aboutright: >-
   Święcić, czcić, obchodzić, fetować, oblewać, opijać, bawić się. To synonimy celebracji, czyli my   - Cozy Cocktail Collective
 abouthelper: Co Robimy
 aboutbar: |-
-  ## Wesela / Eventy
+  ## Wesela i Eventy
+
   ## Doradztwo Barowe
+
   ## Warsztaty i szkolenia
 collage1: /img/collage_1.png
 collage2: /img/collage_3.png
@@ -38,10 +40,9 @@ projectsbar: |-
   ## fotograf / filmowiec / weddingplanner
   ## / make up / grafik / pokaz flair
   ## / chef kuchni / kelnerzy
-projectstext: Częścią cozy są też nasi przyjaciele zajmujący się usługami, które
+projectstext: Częścią Cozy są też nasi przyjaciele zajmujący się usługami, które
   mogą wzbogacić Twoją imprezę, akcję promocyjną, czy tworzenie konceptu.
-  Działając razem nasz potencjał się mnoży a wrażenia z całości będą bardziej
-  spójne i proporcjonalnie większe.
+  Działając razem nasz potencjał się mnoży, tak jak efekty naszej współpracy
 template: index
 projectsbarmobile: |-
   Fotograf  
