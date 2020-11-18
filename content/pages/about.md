@@ -12,7 +12,7 @@ weddings: >-
   Od wielu lat zdobywamy doświadczenie w najlepszych koktajlbarach w Polsce i na świecie. Teraz przeniesiemy najwyższą jakość w organizacji i obsłudze baru na Twoje wesele.
 
 
-  Przygotowujemy autorskie menu koktajlowe spójne ze stylistyką Twojego przyjęcia, zaaranżujemy bar, dobierzemy wina i przaygotujemy selekcję alkoholi premium.
+  Przygotujemy autorskie menu koktajlowe spójne ze stylistyką Twojego przyjęcia, zaaranżujemy bar, dobierzemy wina i przygotujemy selekcję alkoholi premium.
 
 
   Mówiąc krótko, zadbamy o to, aby każdy toast był niezapomniany. Skontaktuj się z nami, opowiedz nam o swoim wymarzonym weselu, a my przygotujemy dla Ciebie spersonalizowaną ofertę.
@@ -23,7 +23,7 @@ scenarios: >-
   Nasze scenariusze to skrupulatnie stworzone menu, które w spójnym stylu łączą ze sobą koktajle wytrawne i słodkie, długie i krótkie, intensywne i orzeźwiające. Dzięki temu każdy z gości Twojego wydarzenia będzie mógł odnaleźć coś dla siebie. 
 
 
-  Każdy z koktajli bazujemy na najwyższej jakości alkoholach, a wszystkie składniki przygotowujemy sami według naszych receptur w duchu zero waste. Jeżeli nie znalazłeś scenariusza dla siebie - nie martw się - z wielką przyjemnością napiszemy spersonalizowane menu dostosowane do Twoich wizji i potrzeb.
+  Każdy z koktajli bazujemy na najwyższej jakości alkoholach, a wszystkie składniki przygotowujemy sami według naszych receptur w duchu zero waste. Jeżeli nie znalazłeś scenariusza dla siebie - nie martw się - z wielką przyjemnością napiszemy spersonalizowane menu dostosowane do Twoich potrzeb.
 eventsimg: /img/events.png
 events: >-
   ## Eventy 
@@ -49,7 +49,7 @@ workshopsright: >-
 
   miarę. Dlatego też, do każdego wydarzenia podchodzimy indywidualnie i ustalamy jego koszt na podstawie potrzeb i preferencji klienta.
 consultancy: >-
-  ## Bar Consultancy
+  ## Bar Konsulting
 
 
   Tworzenie barów od podszewki to dla nas największa przyjemność. Pomożemy Ci zarówno jeżeli masz już funkcjonujący bar i chcesz usprawnić działalnośc tej częsci restauracji, a także jeśli potrzebujesz doradztwa przy całkowicie nowym projekcie
