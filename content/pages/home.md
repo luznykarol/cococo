@@ -26,11 +26,13 @@ aboutright: >-
   Święcić, czcić, obchodzić, fetować, oblewać, opijać, bawić się. To synonimy celebracji, czyli my   - Cozy Cocktail Collective
 abouthelper: Co Robimy
 aboutbar: |-
+  ## Warsztaty i Szkolenia
+
+  ## Integracja Online
+
   ## Wesela i Eventy
 
   ## Doradztwo Barowe
-
-  ## Warsztaty i szkolenia
 collage1: /img/collage_1.png
 collage2: /img/collage_3.png
 collage3: /img/collage_2.png
