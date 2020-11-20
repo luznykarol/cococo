@@ -49,7 +49,7 @@ workshopsright: >-
 
   miarę. Dlatego też, do każdego wydarzenia podchodzimy indywidualnie i ustalamy jego koszt na podstawie potrzeb i preferencji klienta.
 consultancy: >-
-  ## Bar Konsulting
+  ## Konsulting Barowy
 
 
   Tworzenie barów od podszewki to dla nas największa przyjemność. Pomożemy Ci zarówno jeżeli masz już funkcjonujący bar i chcesz usprawnić działalnośc tej częsci restauracji, a także jeśli potrzebujesz doradztwa przy całkowicie nowym projekcie
