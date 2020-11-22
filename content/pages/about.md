@@ -33,8 +33,7 @@ events: >-
 
   Wybierz jeden z oferowanych przez nas autorskich scenariuszy lub napisz do nas, i pozwól nam zaprojektować bar na Twoje wydarzenie.
 workshops: >-
-  ## Warsztaty Koktajlowe
-
+  
 
   Warsztaty koktajlowe online to aktywność, dzięki której współpracownicy nie tylko się zintegrują, ale również będą mieli szansę zdobyć nowe umiejętności. Nauczymy obsługi podstawowego sprzętu barmańskiego, opowiemy o historii wybranych koktajli i podpowiemy jak przygotować składniki i półprodukty. Dzięki nowo zdobytym umiejętnościom będziecie mogli raczyć siebie i innych pysznymi koktajlami w domowym zaciszu.
 workshopsright: >-
@@ -49,8 +48,7 @@ workshopsright: >-
 
   miarę. Dlatego też, do każdego wydarzenia podchodzimy indywidualnie i ustalamy jego koszt na podstawie potrzeb i preferencji klienta.
 consultancy: >-
-  ## Konsulting Barowy
-
+  
 
   Tworzenie barów od podszewki to dla nas największa przyjemność. Pomożemy Ci zarówno jeżeli masz już funkcjonujący bar i chcesz usprawnić działalnośc tej częsci restauracji, a także jeśli potrzebujesz doradztwa przy całkowicie nowym projekcie
 
