@@ -37,11 +37,11 @@ workshops: >-
 
   Warsztaty koktajlowe online to aktywność, dzięki której współpracownicy nie tylko się zintegrują, ale również będą mieli szansę zdobyć nowe umiejętności. Nauczymy obsługi podstawowego sprzętu barmańskiego, opowiemy o historii wybranych koktajli i podpowiemy jak przygotować składniki i półprodukty. Dzięki nowo zdobytym umiejętnościom będziecie mogli raczyć siebie i innych pysznymi koktajlami w domowym zaciszu.
 workshopsright: >-
-  Każde spotkanie poprzedza ankieta, która pozwoli dopasować szkolenie do
-  indywidualnych preferencji uczestników. W dniu warsztatów, każdy z uczestników
-  otrzymuje box niezbędny do interaktywnego udziału w warsztatach. Zawartość
-  pudełka różni się w zależności od wybranego i dostosowanego do preferencji
-  klienta scenariusza. 
+  Nasze warsztaty poprzedzone są ankietą, która pozwoli nam na dopasowowanie
+  szkolenia do indywidualnych preferencji uczestników. W dniu warsztatów, każdy
+  z uczestników otrzymuje box niezbędny do interaktywnego udziału w warsztatach.
+  Zawartość pudełka różni się w zależności od wybranego i dostosowanego do
+  preferencji klienta scenariusza. 
 
 
   Każde spotkanie jest wyjątkowe, a przygotowanie go jest jak szycie na
