@@ -34,9 +34,9 @@ aboutbar: |-
 
   ## Doradztwo Barowe
 collage1: /img/dsc09551.jpg
-collage2: /img/collage_3.png
-collage3: /img/collage_2.png
-collage4: /img/collage_4.png
+collage2: /img/dsc09976.jpg
+collage3: /img/dsc00064.jpg
+collage4: /img/dsc09853.jpg
 projectshelper: Nasze przykładowe realizacje
 projectsbar: |-
   ## fotograf / filmowiec / weddingplanner
