@@ -34,7 +34,7 @@ aboutbar: |-
 
   ## Doradztwo Barowe
 collage1: /img/dsc09551.jpg
-collage2: /img/dsc09976.jpg
+collage2: /img/dsc00328.jpg
 collage3: /img/dsc00064.jpg
 collage4: /img/dsc09853.jpg
 projectshelper: Nasze przykładowe realizacje
