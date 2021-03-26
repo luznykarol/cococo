@@ -33,7 +33,7 @@ aboutbar: |-
   ## Wesela i Eventy
 
   ## Doradztwo Barowe
-collage1: /img/collage_1.png
+collage1: /img/dsc09551.jpg
 collage2: /img/collage_3.png
 collage3: /img/collage_2.png
 collage4: /img/collage_4.png
