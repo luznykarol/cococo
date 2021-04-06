@@ -26,8 +26,7 @@ scenarios: >-
   Każdy z koktajli bazujemy na najwyższej jakości alkoholach, a wszystkie składniki przygotowujemy sami według naszych receptur w duchu zero waste. Jeżeli nie znalazłeś scenariusza dla siebie - nie martw się - z wielką przyjemnością napiszemy spersonalizowane menu dostosowane do Twoich potrzeb.
 eventsimg: /img/dsc01232.jpg
 events: >-
-  ![](/img/dsc00912.jpg)
-
+  
 
   ## Eventy
 
