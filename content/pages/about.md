@@ -70,5 +70,6 @@ consultancybar: Skontaktuj się z nami i opowiedz o swoich potrzebach - my zajmi
 template: about
 seo:
   title: Cozy Cocktail Collective
-  description: Eventy, Wesela, Cocktail Scenarios, Doradztwo Barowe
+  description: Eventy, Wesela, Cocktail Scenarios, Doradztwo Barowe, Warsztaty
+    koktajlowe, Integracja Online
 ---
