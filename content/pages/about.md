@@ -24,9 +24,13 @@ scenarios: >-
 
 
   Każdy z koktajli bazujemy na najwyższej jakości alkoholach, a wszystkie składniki przygotowujemy sami według naszych receptur w duchu zero waste. Jeżeli nie znalazłeś scenariusza dla siebie - nie martw się - z wielką przyjemnością napiszemy spersonalizowane menu dostosowane do Twoich potrzeb.
-eventsimg: /img/events.png
+eventsimg: /img/dsc01232.jpg
 events: >-
-  ## Eventy 
+  ![](/img/dsc00912.jpg)
+
+
+  ## Eventy
+
 
   Nie ma dwóch takich samych eventów, dlatego nie wierzymy w szablonowe rozwiązania. Niezależnie od tego czy organizujesz dużą , firmową imprezę czy też potrzebujesz kamerlanej usługi barowej na prywatne spotkanie - chętnie Ci pomożemy.
 
